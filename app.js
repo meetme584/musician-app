@@ -18,6 +18,8 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build/index.html')); 
 });
 
+// Added Comment for testing
+
 // initialize store
 const musician = new Musician(store);
 musician.initStore(initialStoreData);
