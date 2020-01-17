@@ -20,6 +20,12 @@ router.get('/all', (req, res) => {
   });
 });
 
+// new route 
+router.get('/new-route', (req, res) => {
+  res.status('200').send('Status: 200 -> New Route Success! ');
+});
+
+
 // retrieve a musician from data store
 router.get('/:id', (req, res) => {
   const { musician } = req.app.locals;
